@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+
+{% block content%}
+
+<h1>The ID of this project is {{ project.id }}</h1>
+    <h2>Below are project details:</h2>
+    <ul>
+        <li>The title of this project is: {{ project.title }}</li>
+        <li>The description of this project is: {{ project.description }}</li>
+    </ul>
+
+{% endblock content %}
