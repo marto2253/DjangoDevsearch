@@ -668,6 +668,14 @@ img {
   max-width: 65rem;
 }
 
+.alert{
+  position:relative;
+  display:flex;
+  width: 20%;
+  margin:0 auto 10px auto;
+  z-index: 99999;
+}
+
 @media screen and (min-width: 650px) {
   .auth > .card {
     padding: 5rem 8rem;
