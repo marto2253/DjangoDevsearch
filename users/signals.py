@@ -22,6 +22,5 @@ def delete_user(sender, instance, **kwargs):
     user.delete()
     print('Deleting user...')
 
-
 # post_save.connect(profile_updated, sender=Profile)
 # post_delete.connect(delete_user, sender=Profile)
