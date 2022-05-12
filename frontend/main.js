@@ -42,7 +42,7 @@ let add_vote_events = () => {
     let vote_buttons = document.getElementsByClassName('vote--option')
     for (let i = 0; vote_buttons.length > i; i++){
         vote_buttons[i].addEventListener('click', (e) => {
-            let token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUyMzUwNzk4LCJpYXQiOjE2NTIzNDg5OTgsImp0aSI6IjZmZDFjMjQ2ZjQxYzRlZWNhOGYwMjVkNjg5MGRlMzg5IiwidXNlcl9pZCI6MX0.oDcuWKviZL3ivy3jw2ZbjQJsWoeCRr9fR8NykSK2nTM'
+            let token = ''
             let vote = e.target.dataset.vote
             let project = e.target.dataset.project
 
