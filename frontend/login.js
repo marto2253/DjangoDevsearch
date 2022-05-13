@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) =>{
         .then(data => {
             console.log('DATA:', data.access)
             if(data.access){
-                localStorage.setItem('token', data.access)
+                sessionStorage.setItem('token', data.access)
                 window.location = 'file:///C:/Users/georg/Desktop/my_projects/Django/DjangoDevsearch/frontend/projects-list.html'
             }else(
                 alert('Username or Password is incorrect.')

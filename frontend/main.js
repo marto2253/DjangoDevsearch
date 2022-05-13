@@ -1,7 +1,7 @@
 let login_button = document.getElementById('login-btn')
 let logout_button = document.getElementById('logout-btn')
 
-let token = localStorage.getItem('token')
+let token = sessionStorage.getItem('token')
 
 if(token){
     logout_button.remove()
@@ -11,7 +11,7 @@ if(token){
 
 logout_button.addEventListener('click', (e) =>{
     e.preventDefault()
-    localStorage.removeItem('token')
+    sessionStorage.removeItem('token')
     window.location = 'file:///C:/Users/georg/Desktop/my_projects/Django/DjangoDevsearch/frontend/login.html'
 })
 
@@ -60,7 +60,7 @@ let add_vote_events = () => {
     let vote_buttons = document.getElementsByClassName('vote--option')
     for (let i = 0; vote_buttons.length > i; i++){
         vote_buttons[i].addEventListener('click', (e) => {
-            let token = localStorage.getItem('token')
+            let token = sessionStorage.getItem('token')
             console.log('TOKEN:', token)
             let vote = e.target.dataset.vote
             let project = e.target.dataset.project
