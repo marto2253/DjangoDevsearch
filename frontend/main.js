@@ -60,8 +60,8 @@ let add_vote_events = () => {
     let vote_buttons = document.getElementsByClassName('vote--option')
     for (let i = 0; vote_buttons.length > i; i++){
         vote_buttons[i].addEventListener('click', (e) => {
-            let token = localStorage.getItem('token')
-            let vote = e.target.dataset.vote
+                  let vote = e.target.dataset.vote
+				  let token = localStorage.getItem('token')
             let project = e.target.dataset.project
 
             fetch(`http://127.0.0.1:8000/api/projects/${project}/vote/`, {
